@@ -5,7 +5,7 @@
 	<title>Document</title>
 	<script src="http://localhost/angular/angular.js"></script>
 </head>
-<body>
+<body><?php  ?>
 	<div ng-app="app">
 		<div ng-controller="function_wala_controller">
 			Enter first name : <input type="text" ng-model="student.first_name"><br>
