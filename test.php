@@ -9,6 +9,7 @@
 		<input type="text" ng-model="yourName" placeholder="Enter a name here">
 		<hr>
 		<h1>Hello {{yourName}}!</h1>
+		<p>This came from ng-bind <span ng-bind="yourName"></span></p>
 	</div>
 	<script type="text/javascript">
 		var cars = ["Saab", "Volvo", "BMW"];

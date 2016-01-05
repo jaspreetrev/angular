@@ -12,6 +12,8 @@
 	<div ng-controller="testController">
 		{{ greeting }}
 	</div>
+
+	
 	<script type="text/javascript">
 		angular.module('my_app', [])
 		.controller('custom_controller', function($scope){
