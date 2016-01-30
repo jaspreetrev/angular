@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="angular.js"></script>
+</head>
+<body data-ng-app="app" >
+	<div ng-controller="testcontroller">
+		<form name="testform">
+			<input type="email" name="emailField" ng-model="formregister.emailField">
+			<span ng-bind="emailField"></span>
+			<input type="password" name="formpassword" ng-model="formregister.formpassword">
+			<span ng-bind="formpassword"></span>
+			<input type="password" name="formpassword1" ng-model="formregister.formpassword1">
+			<span ng-bind="formpassword1"></span>
+			{{ checkform() }}
+		</form>
+	</div>
+	
+
+	<script type="text/javascript">
+		var app = angular.module('app', []);
+		app.controller('testcontroller', function($scope){
+			$scope.formregister = {
+				emailField 		: 'test@gmail.com',
+				formpassword  	: 'test',
+				formpassword1 	: 'test'
+			}
+			$scope.checkform = function () {
+				console.log('yoyoyoo');
+				return 'yoyoyooyo';
+			}
+			console.log($scope.formregister);
+		});
+	</script>
+</body>
+</html>
